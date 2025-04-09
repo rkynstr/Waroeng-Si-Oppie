@@ -1,0 +1,108 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+    min-height: 100vh;
+    background-color: blueviolet;
+}
+
+section {
+    margin-top: 35vh;
+    position: relative;
+    width: 100%;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+section::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    z-index: 15;
+}
+
+section img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+#angkot,
+#textTwo {
+    position: absolute;
+    white-space: nowrap;
+    font-size: 7vw;
+    transform-origin: center;
+    transition: transform 0.05s ease-out;
+}
+
+@keyframes bumpRide {
+    0% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+
+    10% {
+        transform: translate(2px, -1px) rotate(-1deg);
+    }
+
+    20% {
+        transform: translate(-2px, 1px) rotate(1deg);
+    }
+
+    30% {
+        transform: translate(1px, -2px) rotate(-0.5deg);
+    }
+
+    40% {
+        transform: translate(-1px, 2px) rotate(0.5deg);
+    }
+
+    50% {
+        transform: translate(0px, 0px) rotate(0deg);
+    }
+
+    60% {
+        transform: translate(1px, 1px) rotate(0.5deg);
+    }
+
+    70% {
+        transform: translate(-1px, -1px) rotate(-0.5deg);
+    }
+
+    80% {
+        transform: translate(2px, 2px) rotate(1deg);
+    }
+
+    90% {
+        transform: translate(-2px, -2px) rotate(-1deg);
+    }
+
+    100% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+}
+
+#angkot {
+    animation: bumpRide 1.5s infinite ease-in-out;
+    z-index: 9;
+}
+
+#textTwo {
+    z-index: 10;
+    left: -150px;
+}
