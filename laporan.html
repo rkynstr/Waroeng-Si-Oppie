@@ -1,0 +1,2365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    <title>Waroeng Si Oppie</title>
+    <link rel="stylesheet" href="style laporan.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <!--Navigation Bar-->
+
+    <nav>
+        <div class="left-content">
+            <img src="logo.png">
+            <a href="#parallax">
+                <h3>Waroeng Si Oppie</h3>
+            </a>
+        </div>
+
+        <div class="middle-content">
+            <a href="#parallax">
+                <h3>Waroeng Si Oppie</h3>
+            </a>
+        </div>
+
+        <div class="right-content">
+            <a href="#parallax">Home</a>
+            <a href="#abstract">Abstract</a>
+
+            <div class="dropdown">
+                <div class="dropdown-button">
+                    <a href="">
+                        Introduction
+                        <span class="drop-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 0 24 24" width="20px"
+                                fill="#EBC00B">
+                                <path d="M24 24H0V0h24v24z" fill="none" opacity=".87" />
+                                <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6-1.41-1.41z" />
+                            </svg>
+                        </span>
+                    </a>
+                </div>
+                <div class="dropdown-list">
+                    <a href="#pendahuluan">Introduction</a>
+                    <a href="#latar">Background</a>
+                    <a href="#tujuan">Research Objectives</a>
+                    <a href="#manfaat" class="last">Research Benefits</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+
+                <div class="dropdown-button">
+                    <a href="">
+                        Activity Planning
+                        <span class="drop-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 0 24 24" width="20px"
+                                fill="#EBC00B">
+                                <path d="M24 24H0V0h24v24z" fill="none" />
+                                <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6-1.41-1.41z" />
+                            </svg>
+                        </span>
+                    </a>
+                </div>
+
+                <div class="dropdown-list">
+                    <div class="sub-dropdown">
+                        <div class="sub-dropdown-button">
+                            <a href="">
+                                Production Planning
+                                <span class="sub-drop-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 0 24 24"
+                                        width="20px" fill="#509443">
+                                        <path d="M24 24H0V0h24v24z" fill="none" />
+                                        <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6-1.41-1.41z" />
+                                    </svg>
+                                </span>
+                            </a>
+                        </div>
+
+                        <div class="sub-dropdown-list">
+                            <a href="#rencana" onclick="goToRencanaSlide(0); showProductByIndex(0)">Science</a>
+                            <a href="#rencana" onclick="goToRencanaSlide(0); showProductByIndex(1)">PPKn</a>
+                            <a href="#rencana" onclick="goToRencanaSlide(0); showProductByIndex(2)">Kesenian</a>
+                            <a href="#rencana" onclick="goToRencanaSlide(0); showOthers()" class="last">Others</a>
+                        </div>
+                    </div>
+                    <a href="#rencana" onclick="goToRencanaSlide(1)">Promotion Planning</a>
+                    <a href="#rencana" onclick="goToRencanaSlide(2)" class="last">Booth Planning</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <div class="dropdown-button">
+                    <a href="">
+                        Activity Results
+                        <span class="drop-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 0 24 24" width="20px"
+                                fill="#EBC00B">
+                                <path d="M24 24H0V0h24v24z" fill="none" opacity=".87" />
+                                <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6-1.41-1.41z" />
+                            </svg>
+                        </span>
+                    </a>
+                </div>
+                <div class="dropdown-list">
+                    <a href="#hasil-kegiatan">Activity Report</a>
+                    <a href="#financials">Financial and Statistics Report</a>
+                    <a href="#refleksi-kegiatan">Activity Reflection</a>
+                    <a href="#biotech" class="last">Biotechnology Product Production Video</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <div class="dropdown-button">
+                    <a href="">
+                        Closing
+                        <span class="drop-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 0 24 24" width="20px"
+                                fill="#EBC00B">
+                                <path d="M24 24H0V0h24v24z" fill="none" opacity=".87" />
+                                <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6-1.41-1.41z" />
+                            </svg>
+                        </span>
+                    </a>
+                </div>
+                <div class="dropdown-list">
+                    <a href="#kesimpulan">Conclusion</a>
+                    <a href="#saran" class="last">Suggestions</a>
+                </div>
+            </div>
+
+            <a href="#dafpus">References</a>
+            <a href="#lampiran">Attachments</a>
+            <a href="#ppt">Presentation PPT</a>
+        </div>
+        <div class="open-menu">
+            <a href="" id="open">
+                <i class="fas fa-bars"></i>
+            </a>
+        </div>
+    </nav>
+
+    <aside id="aside">
+        <div class="close-menu">
+            <a href="" id="close">
+                <i class="fas fa-times"></i>
+            </a>
+        </div>
+        <div class="content">
+            <a href="#parallax">Home</a>
+            <a href="#abstract">Abstract</a>
+            <a href="#pendahuluan">Introduction</a>
+            <a href="#latar">Background</a>
+            <a href="#tujuan">Research Objectives</a>
+            <a href="#manfaat">Research Benefits</a>
+            <a href="#rencana" onclick="goToRencanaSlide(0); showProductByIndex(0)">Production Planning - Science</a>
+            <a href="#rencana" onclick="goToRencanaSlide(0); showProductByIndex(1)">Production Planning - PPKn</a>
+            <a href="#rencana" onclick="goToRencanaSlide(0); showProductByIndex(2)">Production Planning - Kesenian</a>
+            <a href="#rencana" onclick="goToRencanaSlide(0); showOthers()">Production Planning - Lainnya</a>
+            <a href="#rencana" onclick="goToRencanaSlide(1)">Promotion Planning</a>
+            <a href="#rencana" onclick="goToRencanaSlide(2)">Booth Planning</a>
+            <a href="#laporan-pelaksanaan">Activity Report</a>
+            <a href="#laporan-keuangan">Financial and Statistics Report</a>
+            <a href="#refleksi-kegiatan">Activity Reflection</a>
+            <a href="#biotech">Biotechnology Product Production Video</a>
+            <a href="#kesimpulan">Conclusion</a>
+            <a href="#saran">Suggestions</a>
+            <a href="#dafpus">References</a>
+            <a href="#lampiran">Attachments</a>
+            <a href="#ppt">Presentation PPT</a>
+        </div>
+    </aside>
+
+    <!-- Go to Web-->
+
+    <div class="web">
+        <div class="web-content">
+            <a href="index.html">
+                <h3>Go To Web</h3>
+                <i class="fa-solid fa-up-right-from-square"></i>
+            </a>
+        </div>
+    </div>
+
+    <!--Beranda-->
+
+    <section id="parallax">
+        <div id="awan1"></div>
+        <div id="monas"></div>
+        <div id="angkot"></div>
+        <div id="rumput"></div>
+    </section>
+
+    <!--Abstract-->
+
+    <section id="abstract">
+        <section class="abstract">
+            <h1>ABSTRACT</h1>
+            <div class="abstract-title-underline"></div>
+            <p>
+                The school bazaar was held as part of the 9th grade practical exam. The practical exams we carry out are
+                not just bazaars, we also hold art performances for the subject arts and sports. The theme was chosen as
+                Nusantara, which means the name of the Indonesian archipelago. My group took a few days to figure out
+                our sub-theme, but in the end we decided on old school Jakarta. This bazaar material is a combination of
+                all subjects. The aim of this activity was to provide real life experience to the students in doing
+                business, working together in teams, solving problems, and get to know our culture more. This activity
+                is designed so that students can apply the material they have learned by managing their own booth. We
+                sell various products such as food and drinks, accessories, and many more. But there were some items
+                that we didn't sell, and ideas that didn't match our plans.<br>
+                <br>
+                Our booth name was supposed to be “Cap Cicak”. We were inspired by a popular herbal drink brand “Cap
+                Badak”. We thought that name was easy to remember and creative because it rhymes. But a few of us
+                thought that the name was pretty gross because of the word “cicak” which translates to house lizard. So,
+                we changed our name to “Waroeng Si Oppie”. We thought that the name Waroeng Si Oppie was more
+                presentable and less disgusting. Waroeng means stall but uses the old Indonesian spelling. Meanwhile "Si
+                Oppie" is the name of our mascot. Oppie is a house lizard. We chose the lizard because it was inspired
+                by the name of our old booth, namely Cap Cicak. Other than that, we also think that lizards are funny
+                and unique to be a mascot.<br>
+                <br>
+                Since this is a collaboration of all subjects there are several subjects that require us to sell
+                products related to that subject matter. To be more specific there are three subjects which are science,
+                civic education, and arts. For science we were learning about biotechnology, so we needed to make one of
+                our products to be a biotechnology product. My group decided to sell organic paint for our paint by
+                numbers. It was made from pandan leaves and different types of flowers. Our civic education material is
+                preserving culture and tolerance. Each tribe in Indonesia has different traditional weapons. A
+                traditional weapon necklace was created to show tolerance and preserve different cultures in Indonesia.
+                Lastly, for the art’s material is Batik. So my group made a pouch with a batik pattern.<br>
+                <br>
+                Our booths were designed around early November 2024. We designed a simple yet unique booth to attract
+                customers. Since our subtheme was old school Jakarta, we decided to add some ondel-ondel and Monas for
+                our photobooth. But, several changes were made to the booth decoration as the bazaar day approved. For
+                example, we add some windows for our photobooth, we also add some plants and fairy lights. The changes
+                were done by us because the decoration turned out to be too plain. Apart from that, we were just told
+                the position of the booth so there were several things that had to be changed.<br>
+                <br>
+                Fast forward to January 2025 a few days before our bazaar. It was a crazy week. We were really busy with
+                our product and the decoration for our booth. When we saw our pre order, there were a lot of customers
+                who bought ice lollies. We thought that we needed to prepare another stock. So, additional stock of ice
+                lollies was prepared the night before the bazaar. On bazaar day, the ice lollies didn't freeze therefore
+                we used the ice box to freeze it. It’s a hectic day for us because there was a customer who ordered a
+                lot of drinks. In the end , a lot of profit was earned from the bazaar. The lesson I learned from this
+                experience is that we need to prepare well in advance. So that stuff like this won’t happen again.
+            </p>
+        </section>
+    </section>
+
+    <!--Anggota-->
+
+    <section id="anggota"></section>
+
+    <!--Pendahuluan-->
+
+    <section id="pendahuluan">
+        <section class="pendahuluan">
+            <h1>INTRODUCTION</h1>
+            <p>
+                In the era of rapidly developing globalization, adaptive and diverse life skills are an important need
+                for individuals, including students at the elementary and secondary education levels. Changes that occur
+                in economic, social, and technological aspects require the younger generation to have critical, creative
+                thinking skills, and be able to work well together. One of the efforts made to create competent students
+                who are able to face the challenges of the times is through an innovative learning approach such as
+                Integrated Learning (IL).<br>
+                <br>
+                Integrated learning is a learning method that combines various disciplines into one large, ongoing
+                project or activity. This aims for students not only to understand the theories taught in class, but
+                also to be able to apply them in real-world situations. In this process, students are trained to play an
+                active role, both individually and in groups, by directly involving themselves in meaningful learning
+                experiences. In addition to increasing learning motivation, this approach also aims to develop critical
+                thinking skills, problem solving, communication, and collaboration with others.<br>
+                <br>
+                One example of the implementation of Integrated Learning at the junior high school level is the final
+                project in the form of a school bazaar. This activity was held as part of the 9th grade practical exam
+                and is a real manifestation of the application of experiential learning. The bazaar project not only
+                trains students to learn about the business world, but also integrates various subjects, such as art,
+                science, civics, and entrepreneurship. With the chosen Nusantara theme, students are invited to get to
+                know more about Indonesia's cultural richness while developing relevant life skills.<br>
+                <br>
+                The implementation of this bazaar includes several main stages, namely preparation, implementation, and
+                evaluation. For six months, students are actively involved in designing the bazaar concept, determining
+                the products to be sold, decorating the booth, and conducting promotions and sales on the day of the
+                event. In this process, various skills such as time management, creative thinking, effective
+                communication, and problem solving are tested and honed. Students are also faced with real challenges,
+                such as managing a budget, dealing with customer requests, and overcoming technical obstacles that may
+                arise during the activity.<br>
+                <br>
+                Through this bazaar activity, students not only gain a deeper understanding of the subject matter, but
+                also valuable experience that can help them in their daily lives. This project provides an opportunity
+                for students to develop their potential, instill values ​​of discipline, responsibility, and build
+                independence that will be useful for their future. Thus, integrated learning plays an important role in
+                creating a young generation that is competitive and ready to face global challenges.
+            </p>
+            <div class="pendahuluan-content-underline1"></div>
+            <div class="pendahuluan-content-underline2"></div>
+
+            <!--Latar Belakang-->
+
+            <section id="latar">
+                <section class="latar-belakang">
+                    <h3>Background</h3>
+                    <p>
+                        Globalization has brought about major changes in various aspects of our lives, from economics,
+                        technology, to education. This rapid development requires individuals to have broad and adaptive
+                        skills in order to compete in an era that continues to develop. This is expected to be possessed
+                        by every student. One of them is realized through Integrated Learning. Encouraging innovation in
+                        students in various fields.<br>
+                        <br>
+                        Integrated Learning is a teaching and learning approach model that pays attention to and adapts
+                        to the level of development of students. Allowing students, both individuals and groups, to play
+                        an active role through direct experience in their learning process. With this, students can
+                        increase their learning motivation and develop critical and creative thinking skills.<br>
+                        <br>
+                        This IL comes from the latest curriculum, namely Merdeka, which involves several fields of study
+                        into inter-subjects and between subjects. Giving freedom to educators and participants so that
+                        they develop varied and innovative learning models, and to improve the quality of learning.<br>
+                        <br>
+                        Same as at Santa Ursula Middle School, Jakarta. One example of its manifestation in grade 9 is
+                        the final project in the form of a bazaar. Starting from preparation, implementation to
+                        evaluation of reports. In facing this IL, students will go through various challenges and
+                        situations that hone students' skills. It is an opportunity for students to develop their
+                        potential with life skills such as communication, problem solving, time management, critical
+                        thinking, creativity and cooperation. This project is implemented for 6 months with a structured
+                        schedule. Sharpening students in exemplary and disciplined.<br>
+                        <br>
+                        Thus, integrated learning has an important role in developing students' skills and potential.
+                    </p>
+                </section>
+            </section>
+
+            <section class="tujuan-manfaat">
+
+                <!--Tujuan-->
+
+                <section id="tujuan">
+                    <section class="tujuan">
+                        <h1>Research Objectives</h1>
+                        <p>Our objectives in implementing this integrated learning project are as follows:</p>
+                        <ul>
+                            <li>
+                                To understand what the objectives of implementing Integrated Learning are.
+                            </li>
+                            <li>
+                                To find out how bazaars are important in developing students' life skills.
+                            </li>
+                            <li>
+                                To find out how the bazaar affects students.
+                            </li>
+                        </ul>
+                    </section>
+                </section>
+
+                <!--Manfaat-->
+
+                <section id="manfaat">
+                    <section class="manfaat">
+                        <h1>Research Benefits</h1>
+                        <p>The benefits of implementing our integrated learning project are as follows:</p>
+                        <p>
+                        <ul>
+                            For Student Implementers
+                            <li>
+                                This activity is useful for developing students' potential and life skills.
+                            </li>
+                            <li>
+                                This activity is useful for fulfilling Integrated Learning assignments, namely bazaars
+                                and web reports.
+                            </li>
+                        </ul>
+                        </p>
+                        <p>
+                        <ul>
+                            For Student Viewers
+                            <li>
+                                This activity is useful for inspiring 7th and 8th grade students about the beauty of
+                                Indonesian culture and its preservation through a bazaar.
+                            </li>
+                        </ul>
+                        </p>
+                        <p>
+                        <ul>
+                            For Schools
+                            <li>
+                                For Schools: This activity is useful for showing the results of the implementation of
+                                learning that has been carried out during semester 1.
+                            </li>
+                            <li>
+                                This activity is useful for increasing awareness of the importance of preserving culture
+                                in the school environment.
+                            </li>
+                        </ul>
+                        </p>
+                        <p>
+                        <ul>
+                            For Visitors
+                            <li>
+                                This activity is useful for getting to know and enjoying the archipelago again through
+                                the bazaar that is held.
+                            </li>
+                        </ul>
+                        </p>
+                    </section>
+                </section>
+            </section>
+        </section>
+    </section>
+
+    <!--Rencana Kegiatan-->
+
+    <section id="rencana">
+        <section class="rencana">
+            <div class="rencana-title">
+                <h1>Activity Planning</h1>
+            </div>
+
+            <p class="rencana-pengantar">
+                In this IL project, we have to prepare the products that we will sell for our bazaar store. Since the
+                overall theme of our bazaar is Nusantara, and the theme we chose is Betawi, we decided to sell items
+                that have a Betawi feel and are liked by buyers. We sell herbal medicine, es cendol, es lolly/monas
+                frozen, jipang/rice krispies, klepon, crocodile bread, drawstring bags/magic oppie bags, paint by
+                numbers, and kajineman. Of the total products that we sell, we sell 4 types of food, 2 drinks, and 3
+                types of goods that contain a Betawi feel.
+            </p>
+
+            <div class="rencana-indicators">
+                <div class="indicator" data-slide="0">Production Planning</div>
+                <div class="indicator" data-slide="1">Promotion Planning</div>
+                <div class="indicator" data-slide="2">Booth Planning</div>
+            </div>
+
+            <div class="rencana-container">
+                <div class="rencana-contents">
+                    <div class="rencana-slide produksi">
+                        <div class="rencana-content">
+                            <div class="produksi-aside">
+                                <button onclick="updatePanel(this)" data-image="pbnc.jpg"
+                                    data-text="<strong>Paint-by-Numbers</strong> We plan to sell paint-by-numbers kits, including an image with numbered sections and matching paints. Our goal is to create a product that combines art with environmental awareness. The paint we plan to use is 100% organic and made from eco-friendly materials, ensuring it won’t harm the environment. We intend to offer six colors: red, orange, yellow, green, blue, and brown. Each kit—consisting of one image and its corresponding paints—is expected to be priced at Rp. 15,000.<br><br><h1>How It's Made</h1><ol class='rencana-prosedur'><li>First of all, rosella flowers, turmeric, pandan leaves, butterfly pea flowers, red roses, and charcoal are blended separately.</li><li>A spoonful of hot water is then poured onto each ingredient, which are then wrapped in gauze.</li><li>Using a spoon, each of the blended ingredients are pressed to extort their pigments.</li><li>The residue left in the gauze is then thrown away.</li><li>The resulting pigments are stored in compartments to be paint.</li></ol>">
+                                    IPA
+                                </button>
+
+                                <button onclick="updatePanel(this)" data-image="kajineman.png"
+                                    data-text="<strong>Kajineman</strong> One of Waroeng Si Oppie's products is kajineman, this kajineman is a necklace that is suitable for everyday wear. Kajineman have designs of  traditional weapons from various islands as a symbol of tolerance between islands and regions of Indonesia. The traditional weapons that we use include Keris, Badik, Piso Halasan, and Talawan.  First, Keris is a traditional Indonesian weapon with a curved shape and a carved hilt, keris also has spiritual, philosophical meaning, and a symbol of power. Second, badik is a sharp weapon in close combat used by South Sulawesi community groups, especially the Bugis community. Badik is a sacred weapon of the Bugis people and is a physical cultural heritage, Badik is believed to be able to create calm, peace, and prosperity.  The third, Piso Halasan is a sword originating from North Tapanuli, owned by a Batak leader who has authority. Piso Halasan is a symbol of the greatness of the Batak hasangapon people, for him the traditional weapon brings benefits to many people. Piso Halasan also contains values ​​such as upholding fair laws and providing a way of life for citizens. Finally, there is Talawang which is a traditional shield of the Dayak Tribe in Kalimantan. Usually made of ironwood. This weapon has a unique shape, in the form of a rectangle with a pointed tip. Its main function is as a protector in battle and traditional ceremonies. Talawang, also has a high cultural value as a symbol of courage, strength, and Dayak cultural identity and is recognized as an intangible cultural heritage of Indonesia. Our group makes necklaces that are each inspired by the four major islands in Indonesia. Each necklace has its own characteristics and uniqueness, reflecting the culture and natural wealth of its islands of origin. Through this product, we want to show that even though we come from different regions/islands, we can still unite and complement each other even through something as simple as a necklace. We hope that these necklaces can be a symbol of unity that shows the beautiful diversity of Indonesia and an inspiration in increasing attitudes of tolerance and consideration in society. We sell this necklace or kajineman for Rp 10,000 per kajineman.">
+                                    PPKn
+                                </button>
+
+                                <button onclick="updatePanel(this)" data-image="kantong.png"
+                                    data-text="<strong>Oppie's Magic Pouch</strong> We are planning to sell drawstring pouches, also known as Oppie’s Magic Pouch. These pouches feature a signature Jakarta motif—batik ondel-ondel—and measure 9 cm x 14 cm. The pouch is perfect for storing small items, from coins to cosmetics. We plan to sell each pouch for Rp. 10,000.<br><br><h1>How It's Made</h1><ol class='rencana-prosedur'><li>A batik-patterned cloth in a size of 11 x 30 cm, two jute ropes each 30 cm in length, a roll of white sewing thread, and a sewing machine is prepared.</li><li>The cloth is then folded in two, being made sure the inside is out.</li><li>Each of the long sides are then basted around 3 cm from the edge of the cloth. This is to temporarily hold the cloth together, making sure it doesn't move around when sewn.</li><li>At precisely 1 cm from each edge of the long sides, the cloth is marked for sewing.</li><li>The two folds of the cloth are then sewn together along the marking, starting from the fold and leaving the last 2 cm apart.</li><li>Each of the 1 cm edges from the 2 cm of cloth left apart are then folded inside, basted, and sewn.</li><li>From each of the short sides of the cloth, 1/4 cm of cloth is folded inside and basted.</li><li>Following the procedure, the basted edges are further folded 3/8 cm inside, right at the edge of the 2 cm of cloth left apart. This fold is then basted and sewn together around 1/4 of the folding from the edge. The steps 6, 7, and 8 are repeated to do the other side.</li><li>The end of the jute rope is pinned, pulled through both of the pouch sleeves from the right and outside the right again. This step is repeated to fasten the other jute rope from the left.</li><li>The pouch is finished, the bastings can be removed now.</li></ol>">
+                                    Kesenian
+                                </button>
+
+                                <button onclick="updateMultiplePanels(this)"
+                                    data-products='[
+                                    {"image": "roti buaya.png", "text": "<strong>Oppie`s Best Friend</strong> The first food item we chose to sell is crocodile bread, this crocodile bread food or can also be called oppie`s best friend is a delicious and savory sandwich made in the shape of a crocodile. We make this crocodile bread into a sandwich, filled with meat, lettuce, and mayonnaise. We also provide sauces for buyers, namely chili sauce and tomato sauce, this crocodile bread is sold for Rp 20,000 per crocodile bread."},
+                                    {"image": "klepon.png", "text": "<strong>Klepon</strong> For food that has a traditional Betawi taste, we sell klepon, this klepon is a sweet and chewy traditional snack, the food is made from glutinous rice flour, then filled with brown sugar and coated with coconut. We make several colors to make it more attractive, namely pink, yellow, blue, and green, we sell it for Rp 8,000 per pack."},
+                                    {"image": "jipang.png", "text": "<strong>Jipang</strong> Next we plan to sell jipang food or can also be called rice krispies, this jipang is made from dry rice that is fried and coated with sugar. We also provide additional choices for the jipang, namely chocolate and peanut butter and topping choices, namely marshmello, and oreo. We sell this jipang for Rp 3,000 per jipang."},
+                                    {"image": "cendol.png", "text": "<strong>Es Cendol</strong> Next item is a drink called es cendol. This cendol ice is one of the refreshing drinks and is suitable for washing away the sultry feeling in the middle of the heat of Jakarta. This cendol ice is made with milk mixed with palm sugar and then mixed with a green chewy dough made from rice flour. The es cendol is sold around 400 ml for each buyer, we sell the es cendol for Rp 10,000 per bottle."},
+                                    {"image": "es lilin.png", "text": "<strong>Es Lilin</strong> One of the foods that we sell is ice lolly or can also be called frozen monas which is made from several flavors of pop ice such as strawberry, mango, lemon, melon, blueberry, and milo which are packed in plastic resembling candles, this food is suitable to eat on a hot day. We sell this ice lolly for Rp 2,000 per pack."},
+                                    {"image": "kunyit asem.png", "text": "<strong>Jamu</strong> We plan to sell Jamu as one of our drinks, the jamu that we sell has two types, namely turmeric and tamarind and saffron-colored rice. Both jamu are sold in 250ml per bottle, the jamu also has many benefits. In turmeric and tamarind jamu, the jamu can overcome stomach ulcers, symptoms of abdominal pain, and bloating. For saffron-colored rice jamu, the jamu can relieve phlegmy coughs, increase endurance, and maintain sugar levels. We sell the jamu for Rp. 10,000 per bottle."}]'>
+                                    Others
+                                </button>
+                            </div>
+
+                            <div class="panel" id="panel"></div>
+
+                        </div>
+                    </div>
+                    <div class="rencana-slide promosi">
+                        <div class="rencana-content">
+                            <p>
+                                To further enliven our products and booth, we prepared several ways to promote them. We
+                                chose Instagram and TikTok as the main social media platforms for promotion because many
+                                students from Santa Ursula and other schools use these platforms. On our Instagram with
+                                the username @waroengsioppie, we uploaded a product catalog poster containing photos and
+                                names of our products, contact details, and our logo. In addition, we also uploaded
+                                descriptions of each of our products on the next slide. We also made a banner for our
+                                special product, herbal medicine. Before uploading the poster and banner, we uploaded a
+                                coming-soon banner on our Instagram to build anticipation for our booth. In addition, we
+                                uploaded several stories on our Instagram as a means to provide information to our
+                                followers about our booth and also to promote and build anticipation for our
+                                products.<br>
+                                <br>
+                                We also uploaded several short videos to our Instagram and TikTok with the username
+                                @waroengoppie to promote our booth. So that people who come to our bazaar are more
+                                interested in the products we sell, we also promote them via Whatsapp. We created a
+                                message on Whatsapp that included important information such as our social media links,
+                                contact person, location and date of our bazaar, and links to pre-order our products. We
+                                also included our slogan, “Cicak cicak di dinding, tempat cocok buat kamu ngkring!” to
+                                make the message look more attractive.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="rencana-slide booth">
+                        <div class="rencana-content">
+                            <p>
+                                In planning the booth, we have a plan to decorate our booth according to our theme,
+                                namely NUSANTARA, especially we chose the Betawi theme. Before we made the booth, we
+                                made a sketch to make it easier for us to decorate the booth. After making the sketch,
+                                we immediately prepared the materials needed. We decorated our booth with items that we
+                                already had and used items such as cardboard. We thought about decorating our booth with
+                                items that are usually used in Betawi houses, we also had time to discuss making a photo
+                                booth, we also planned to make a cashier sign and menu sign to show the items we sell to
+                                buyers. At first we planned to make a photo booth with ondel-ondel standees, wajik
+                                balang teeth, and several stars.<br>
+                                <br>
+                                As time went by we had plans to change the decoration of our booth, because the
+                                properties or tables given for our bazaar booth did not match our expectations. We plan
+                                to make our booth with pipes installed on the table except for the wajik balang teeth,
+                                we still want to make the props because the wajik balang is a property that is very
+                                typical of Betawi and fits into our theme, besides the wajik balang teeth, we also still
+                                make ondel-ondel which we plan to name Azril which is displayed in front of our booth,
+                                then we also thought about changing our photo booth by making a Monas and balloon
+                                letters, then we also thought about making our shop writing, Waroeng Si Oppie, with
+                                cardboard.<br>
+                                <br>
+                                The location of our booth was chosen by drawing lots, and we got a position in front of
+                                the entrance of our school hall. Our booth used two school desks measuring 60 cm x 120
+                                cm. To make our booth more attractive, we used a red and white checkered patterned
+                                coaster, we also decorated our booth including a teapot, ring light, fairy lights,
+                                typical Betawi house windows, and cashier signs. We also displayed ondel-ondel that we
+                                had made in front of our booth, flowers in front of our booth stand, and installed the
+                                gigi balang wajik that we made in front of our table. In addition to gigi balang wajik,
+                                we also put an orchestra stand in front of our booth to put our posters. Then some of
+                                our products such as klepon, jipang, and crocodile sandwich bread were placed neatly in
+                                front of the table, while herbal medicine was placed on a drink coaster and for
+                                kajineman and drawstring bags we put them in a basket, we also put Qris on our table.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="rencana-prev" onclick="moveSlide(-1)" id="prevBtn">
+                    <i class="fa-solid fa-caret-left"></i>
+                </button>
+                <button class="rencana-next" onclick="moveSlide(1)" id="nextBtn">
+                    <i class="fa-solid fa-caret-right"></i>
+                </button>
+            </div>
+        </section>
+    </section>
+
+    <!--Hasil Kegiatan-->
+
+    <section id="hasil-kegiatan">
+        <section class="hasil-kegiatan">
+            <div class="hasil-title">
+                <h1>Activity Results</h1>
+            </div>
+
+            <section id="laporan-pelaksanaan">
+                <section class="laporan-pelaksanaan">
+                    <h1>Activity Report</h1>
+                    <p>
+                        After months of preparation and anticipation, the day we had all been waiting for finally
+                        arrived on January 16, 2025. A few days earlier, we had agreed to wear white t-shirts as tops
+                        and batik wrap skirts as bottoms for the bazaar. This outfit choice was not only to highlight
+                        Indonesian culture through batik, but also to ensure comfort and ease of movement while
+                        selling.<br>
+                        <br>
+                        On that much-anticipated morning, we received an announcement from Mr. Agus that all bazaar
+                        stands would be allowed to start serving customers at 11:00 AM. However, quite unexpectedly,
+                        many visitors began arriving even before 11:00. Most of them were our juniors who were on their
+                        first break at 9:00 AM. With a bit of regret, we had to inform them that we could not begin
+                        transactions yet and kindly asked them to return during the second break.<br>
+                        <br>
+                        When it was finally time to open our booth, we began serving customers warmly and started the
+                        buying and selling process. The first product to sell out completely was *Monas Frozen*. Because
+                        of its popularity, we had to turn down a few customers who were still asking for it. At that
+                        point, the product was already sold out, and we were waiting for the next batch from one of our
+                        group members, Grace, who was in charge of making it.<br>
+                        While waiting for the new stock of Monas Frozen, we focused on promoting our other products
+                        using two different approaches: soft selling and hard selling. Soft selling is a subtle and
+                        friendly marketing method that does not pressure customers, such as answering their questions
+                        politely and offering extra information. Hard selling, on the other hand, is more direct and
+                        assertive, like shouting promotional phrases in the middle of a crowd.<br>
+                        Eventually, one by one, our products began to sell out. Just as we finished selling everything
+                        else, the long-awaited batch of Monas Frozen finally arrived. Unfortunately, by that time, Mr.
+                        Agus had already told all participants to begin cleaning up their booths. Even so, we did not
+                        give up. We continued offering Monas Frozen to visitors who were still walking around the bazaar
+                        area. Thankfully, many of our friends, probably tired from selling all day, came over and bought
+                        the rest until it sold out completely.<br>
+                        After that, we quickly worked together to clean up the booth. Some of us packed up the sales
+                        items, while others cleaned the area to make sure we did not leave any trash behind. We stacked
+                        the tables, rearranged the chairs, and slowly took down all the decorations. Once everything was
+                        neatly packed and the booth area was clean, we got ready to take our belongings and go home.
+                        Although the day was exhausting, we felt proud and grateful to have gone through the entire
+                        bazaar experience together.
+                    </p>
+                    <div class="laporan-pelaksanaan-content-underline1"></div>
+                    <div class="laporan-pelaksanaan-content-underline2"></div>
+                </section>
+            </section>
+
+            <!--Hasil Kegiatan - Financials-->
+
+            <section id="financials">
+                <section id="laporan-keuangan">
+                    <div class="financial-title">
+                        <p>FINANCIALS</p>
+                    </div>
+
+                    <div class="financial-container">
+                        <div class="financial-contents">
+
+                            <!--Expenses-->
+
+                            <div class="financial">
+                                <div class="title">
+                                    <p>EXPENSES</p>
+                                </div>
+
+                                <div class="content">
+                                    <div class="data">
+                                        <p class="data-financial">Financial Report</p>
+                                        <iframe
+                                            src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTkwAoxUXzOGkP8TSnyKbiC5W4PjYwpU-TP6HB0MGmaD8Y6lOnhk5rwr5YJaJVbY8VTnj3wE9w1rFFa/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--Online Income-->
+
+                            <div class="financial">
+                                <div class="title">
+                                    <p>ONLINE INCOMES</p>
+                                </div>
+
+                                <div class="content">
+                                    <div class="data">
+                                        <p class="data-financial">Financial Report</p>
+                                        <iframe
+                                            src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRddAVjlHRyAMXPHJvZXWTrbxogdx6_y6XtDLWDD1AQQvkvY-HvYd34aJpK90W_zwkPxDDGc2wxkQ1d/pubhtml?gid=560297029&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+                                    </div>
+
+                                    <div class="charts">
+                                        <div class="chart-statistic">Statistic Report</div>
+                                        <p class="chart-p">View it in a Table!</p>
+                                        <div class="line-chart-link">
+                                            <a class="chart" href="#table-2">
+                                                <div class="chart-list"></div>
+                                                Data Calculation Table
+                                                <i class="fa-solid fa-up-right-from-square"></i>
+                                            </a>
+                                        </div>
+
+                                        <p class="chart-p">View it in Charts!</p>
+                                        <div class="line-chart-link">
+                                            <a class="chart" href="#line-pop-up-2">
+                                                <div class="chart-list"></div>
+                                                Line Chart
+                                                <i class="fa-solid fa-up-right-from-square"></i>
+                                            </a>
+                                        </div>
+
+                                        <div class="bar-chart-link">
+                                            <a class="chart" href="#bar-pop-up-2">
+                                                <div class="chart-list"></div>
+                                                Bar Chart
+                                                <i class="fa-solid fa-up-right-from-square"></i>
+                                            </a>
+                                        </div>
+
+                                        <div class="pie-chart-link">
+                                            <a class="chart" href="#pie-pop-up-2">
+                                                <div class="chart-list"></div>
+                                                Pie Chart
+                                                <i class="fa-solid fa-up-right-from-square"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--Offline Income-->
+
+                            <div class="financial">
+                                <div class="title">
+                                    <p>OFFLINE INCOMES</p>
+                                </div>
+
+                                <div class="content">
+                                    <div class="data">
+                                        <p class="data-financial">Financial Report</p>
+                                        <iframe
+                                            src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRddAVjlHRyAMXPHJvZXWTrbxogdx6_y6XtDLWDD1AQQvkvY-HvYd34aJpK90W_zwkPxDDGc2wxkQ1d/pubhtml?gid=1380001208&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+                                    </div>
+
+                                    <div class="charts">
+                                        <div class="chart-statistic">Statistic Report</div>
+                                        <p class="chart-p">View it in a Table!</p>
+                                        <div class="line-chart-link">
+                                            <a class="chart" href="#table-3">
+                                                <div class="chart-list"></div>
+                                                Data Calculation Table
+                                                <i class="fa-solid fa-up-right-from-square"></i>
+                                            </a>
+                                        </div>
+
+                                        <p class="chart-p">View it in Charts!</p>
+                                        <div class="line-chart-link">
+                                            <a class="chart" href="#line-pop-up-3">
+                                                <div class="chart-list"></div>
+                                                Line Chart
+                                                <i class="fa-solid fa-up-right-from-square"></i>
+                                            </a>
+                                        </div>
+
+                                        <div class="bar-chart-link">
+                                            <a class="chart" href="#bar-pop-up-3">
+                                                <div class="chart-list"></div>
+                                                Bar Chart
+                                                <i class="fa-solid fa-up-right-from-square"></i>
+                                            </a>
+                                        </div>
+
+                                        <div class="pie-chart-link">
+                                            <a class="chart" href="#pie-pop-up-3">
+                                                <div class="chart-list"></div>
+                                                Pie Chart
+                                                <i class="fa-solid fa-up-right-from-square"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--Profit/Loss-->
+
+                            <div class="financial">
+                                <div class="title">
+                                    <p>PROFIT/LOSS</p>
+                                </div>
+
+                                <div class="content">
+                                    <div class="data">
+                                        <p class="data-financial">Financial Report</p>
+                                        <iframe
+                                            src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRddAVjlHRyAMXPHJvZXWTrbxogdx6_y6XtDLWDD1AQQvkvY-HvYd34aJpK90W_zwkPxDDGc2wxkQ1d/pubhtml?gid=217161612&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--Salary-->
+
+                            <div class="financial">
+                                <div class="title">
+                                    <p>SALARY</p>
+                                </div>
+
+                                <div class="content">
+                                    <div class="data">
+                                        <p class="data-financial">Financial Report</p>
+                                        <iframe
+                                            src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRddAVjlHRyAMXPHJvZXWTrbxogdx6_y6XtDLWDD1AQQvkvY-HvYd34aJpK90W_zwkPxDDGc2wxkQ1d/pubhtml?gid=56510575&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+                                    </div>
+
+                                    <div class="charts">
+                                        <div class="chart-statistic">Statistic Report</div>
+                                        <p class="chart-p">View it in a Table!</p>
+                                        <div class="line-chart-link">
+                                            <a class="chart" href="#table-5">
+                                                <div class="chart-list"></div>
+                                                Data Calculation Table
+                                                <i class="fa-solid fa-up-right-from-square"></i>
+                                            </a>
+                                        </div>
+
+                                        <p class="chart-p">View it in Charts!</p>
+                                        <div class="line-chart-link">
+                                            <a class="chart" href="#line-pop-up-5">
+                                                <div class="chart-list"></div>
+                                                Line Chart
+                                                <i class="fa-solid fa-up-right-from-square"></i>
+                                            </a>
+                                        </div>
+
+                                        <div class="bar-chart-link">
+                                            <a class="chart" href="#bar-pop-up-5">
+                                                <div class="chart-list"></div>
+                                                Bar Chart
+                                                <i class="fa-solid fa-up-right-from-square"></i>
+                                            </a>
+                                        </div>
+
+                                        <div class="pie-chart-link">
+                                            <a class="chart" href="#pie-pop-up-5">
+                                                <div class="chart-list"></div>
+                                                Pie Chart
+                                                <i class="fa-solid fa-up-right-from-square"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--Profit Division-->
+
+                            <div class="financial">
+                                <div class="title">
+                                    <p>PROFIT DIVISION</p>
+                                </div>
+
+                                <div class="content">
+                                    <div class="data">
+                                        <p class="data-financial">Financial Report</p>
+                                        <iframe
+                                            src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRddAVjlHRyAMXPHJvZXWTrbxogdx6_y6XtDLWDD1AQQvkvY-HvYd34aJpK90W_zwkPxDDGc2wxkQ1d/pubhtml?gid=1839144781&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+                                    </div>
+
+                                    <div class="charts">
+                                        <div class="chart-statistic">Statistic Report</div>
+                                        <p class="chart-p">View it in a Table!</p>
+                                        <div class="line-chart-link">
+                                            <a class="chart" href="#table-6">
+                                                <div class="chart-list"></div>
+                                                Data Calculation Table
+                                                <i class="fa-solid fa-up-right-from-square"></i>
+                                            </a>
+                                        </div>
+
+                                        <p class="chart-p">View it in Charts!</p>
+                                        <div class="line-chart-link">
+                                            <a class="chart" href="#line-pop-up-6">
+                                                <div class="chart-list"></div>
+                                                Line Chart
+                                                <i class="fa-solid fa-up-right-from-square"></i>
+                                            </a>
+                                        </div>
+
+                                        <div class="bar-chart-link">
+                                            <a class="chart" href="#bar-pop-up-6">
+                                                <div class="chart-list"></div>
+                                                Bar Chart
+                                                <i class="fa-solid fa-up-right-from-square"></i>
+                                            </a>
+                                        </div>
+
+                                        <div class="pie-chart-link">
+                                            <a class="chart" href="#pie-pop-up-6">
+                                                <div class="chart-list"></div>
+                                                Pie Chart
+                                                <i class="fa-solid fa-up-right-from-square"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button class="financial-prev" onclick="moveFinancialSlide(-1)" id="financialPrevBtn">
+                            <i class="fa-solid fa-caret-left"></i>
+                        </button>
+                        <button class="financial-next" onclick="moveFinancialSlide(1)" id="financialNextBtn">
+                            <i class="fa-solid fa-caret-right"></i>
+                        </button>
+                    </div>
+
+                    <div id="table-2" class="chart-pop-up">
+                        <div class="chart-content">
+                            <h1>Online Income Data Calculation Table</h1>
+                            <table>
+                                <tr>
+                                    <th>Item</th>
+                                    <th>Tally</th>
+                                    <th>Frequency</th>
+                                </tr>
+                                <tr>
+                                    <td>Oppie's Best Friend</td>
+                                    <td>卌 卌 卌 卌 |||</td>
+                                    <td>23</td>
+                                </tr>
+                                <tr>
+                                    <td>Klepon (1 porsi)</td>
+                                    <td>||||</td>
+                                    <td>4</td>
+                                </tr>
+                                <tr>
+                                    <td>Klepon (2 porsi)</td>
+                                    <td>卌 卌 卌 卌 卌 |||</td>
+                                    <td>28</td>
+                                </tr>
+                                <tr>
+                                    <td>Jipang (original)</td>
+                                    <td>卌 卌 卌 卌 卌 卌 卌 卌 卌</td>
+                                    <td>45</td>
+                                </tr>
+                                <tr>
+                                    <td>Jipang (with topping)</td>
+                                    <td>卌 |</td>
+                                    <td>6</td>
+                                </tr>
+                                <tr>
+                                    <td>Monas Frozen</td>
+                                    <td>卌 卌 卌 卌 卌 卌 卌 卌 卌 卌 卌 卌 卌 卌 卌 卌 卌</td>
+                                    <td>85</td>
+                                </tr>
+                                <tr>
+                                    <td>Es Cendol</td>
+                                    <td>卌 卌 卌 卌 卌 卌 卌 ||||</td>
+                                    <td>39</td>
+                                </tr>
+                                <tr>
+                                    <td>Kajineman</td>
+                                    <td>卌 卌 ||</td>
+                                    <td>12</td>
+                                </tr>
+                                <tr>
+                                    <td>Kantong Ajaib Oppie</td>
+                                    <td>卌 卌 卌 ||||</td>
+                                    <td>19</td>
+                                </tr>
+                                <tr>
+                                    <td>Paint-By-Number</td>
+                                    <td>卌 卌 |</td>
+                                    <td>11</td>
+                                </tr>
+                                <tr>
+                                    <td>Photobooth</td>
+                                    <td>||</td>
+                                    <td>2</td>
+                                </tr>
+                                <tr>
+                                    <td>Jamu</td>
+                                    <td>卌 卌 卌 卌 卌 卌 卌 |||</td>
+                                    <td>38</td>
+                                </tr>
+                            </table>
+                            <p>
+                                Dari data yang ada, Monas Frozen adalah item yang paling sering dipilih dengan 85 kali,
+                                diikuti oleh
+                                Jipang original (45 kali) dan Es Cendol (39 kali). Sementara itu, Photobooth adalah yang
+                                paling jarang
+                                dipilih, hanya 2 kali. Ini menunjukkan bahwa makanan dingin seperti Monas Frozen dan
+                                minuman
+                                tradisional
+                                seperti Es Cendol cukup digemari, sedangkan aktivitas seperti Photobooth kurang
+                                diminati.
+                            </p>
+                            <a href="#financials" class="chart-close">
+                                <i class="fas fa-times"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div id="line-pop-up-2" class="chart-pop-up">
+                        <div class="chart-content">
+                            <h1>Online Income Line Chart</h1>
+                            <div class="chart-container"><canvas id="lineChart2"></canvas></div>
+                            <p>
+                                Diagram garis ini menampilkan jumlah penjualan produk dengan bentuk garis yang naik
+                                turun,
+                                sesuai
+                                dengan banyak atau sedikitnya barang yang terjual. Produk yang paling laku tetap Monas
+                                Frozen dengan 85
+                                penjualan, dan yang paling sedikit adalah Photobooth. Perbedaan ini bisa terjadi karena
+                                minat pembeli
+                                yang berbeda-beda dan stok barang yang sudah dipersiapkan sebelumnya. Kami menyesuaikan
+                                stok
+                                tiap produk
+                                agar pas, tidak terlalu banyak atau terlalu sedikit.
+                            </p>
+                            <a href="#financials" class="chart-close">
+                                <i class="fas fa-times"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div id="bar-pop-up-2" class="chart-pop-up">
+                        <div class="chart-content">
+                            <h1>Online Income Bar Chart</h1>
+                            <div class="chart-container"><canvas id="barChart2"></canvas></div>
+                            <p>
+                                Diagram batang ini menunjukkan jumlah setiap produk yang terjual selama bazar. Dari data
+                                yang
+                                ditampilkan, terlihat bahwa produk yang paling banyak terjual adalah Monas Frozen
+                                sebanyak
+                                85 unit,
+                                sedangkan yang paling sedikit terjual adalah Photobooth dengan hanya 2 unit. Melalui
+                                grafik
+                                ini, kita
+                                bisa melihat urutan penjualan dari yang paling tinggi sampai yang paling rendah,
+                                sehingga
+                                kita tahu
+                                produk mana yang paling laris dan mana yang kurang diminati.
+                            </p>
+                            <a href="#financials" class="chart-close">
+                                <i class="fas fa-times"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div id="pie-pop-up-2" class="chart-pop-up">
+                        <div class="chart-content">
+                            <h1>Online Income Pie Chart</h1>
+                            <div class="chart-container"><canvas id="pieChart2"></canvas></div>
+                            <p>
+                                Diagram lingkaran digunakan untuk menunjukkan seberapa besar jumlah penjualan
+                                masing-masing
+                                produk
+                                dibandingkan dengan total penjualan secara keseluruhan. Total penjualan seluruh produk
+                                adalah 312 unit.
+                                Setiap produk dihitung persentasenya dan diubah ke dalam bentuk sudut lingkaran.
+                                Misalnya,
+                                Monas Frozen
+                                mewakili sekitar 27,24% dari total penjualan, atau sekitar 98,1°, sedangkan Photobooth
+                                hanya
+                                sekitar
+                                0,64% atau 2,3°. Melalui diagram ini, kita bisa langsung tahu produk mana yang laris dan
+                                mana yang
+                                kurang laku dari besarnya bagian lingkaran.<br>
+                                <br>
+                            </p>
+                            <h1>Perhitungan</h1>
+                            <table>
+                                <tr>
+                                    <th>Rumus Menghitung Persentase</th>
+                                    <td>Persentase = (Frekuensi / Total frekuensi) × 100%</td>
+                                </tr>
+                            </table>
+                            <table>
+                                <tr>
+                                    <th>Rumus Menghitung Besar Sudut</th>
+                                    <td>Sudut = (Frekuensi / Total frekuensi) × 360°</td>
+                                </tr>
+                            </table>
+                            <table>
+                                <tr>
+                                    <th>Item</th>
+                                    <th>Percentage</th>
+                                    <th>Angle Size</th>
+                                </tr>
+                                <tr>
+                                    <td>Oppie's Best Friend</td>
+                                    <td>(23 / 312) × 100% = 7,37%</td>
+                                    <td>(23 / 312) × 360° = 26,5°</td>
+                                </tr>
+                                <tr>
+                                    <td>Klepon (1 porsi)</td>
+                                    <td>(4 / 312) × 100% = 1,28%</td>
+                                    <td>(4 / 312) × 360° = 4,6°</td>
+                                </tr>
+                                <tr>
+                                    <td>Klepon (2 porsi)</td>
+                                    <td>(28 / 312) × 100% = 8,97%</td>
+                                    <td>(28 / 312) × 360° = 32,3°</td>
+                                </tr>
+                                <tr>
+                                    <td>Jipang (original)</td>
+                                    <td>(45 / 312) × 100% = 14,42%</td>
+                                    <td>(45 / 312) × 360° = 51,9°</td>
+                                </tr>
+                                <tr>
+                                    <td>Jipang (with topping)</td>
+                                    <td>(6 / 312) × 100% = 1,92%</td>
+                                    <td>(6 / 312) × 360° = 6,9°</td>
+                                </tr>
+                                <tr>
+                                    <td>Monas Frozen</td>
+                                    <td>(85 / 312) × 100% = 27,24%</td>
+                                    <td>(85 / 312) × 360° = 98,1°</td>
+                                </tr>
+                                <tr>
+                                    <td>Es Cendol</td>
+                                    <td>(39 / 312) × 100% = 12,50%</td>
+                                    <td>(39 / 312) × 360° = 45°</td>
+                                </tr>
+                                <tr>
+                                    <td>Kajineman</td>
+                                    <td>(12 / 312) × 100% = 3,85%</td>
+                                    <td>(12 / 312) × 360° = 13,8°</td>
+                                </tr>
+                                <tr>
+                                    <td>Kantong Ajaib Oppie</td>
+                                    <td>(19 / 312) × 100% = 6,09%</td>
+                                    <td>(19 / 312) × 360° = 21,9°</td>
+                                </tr>
+                                <tr>
+                                    <td>Paint-By-Number</td>
+                                    <td>(11 / 312) × 100% = 3,53%</td>
+                                    <td>(11 / 312) × 360° = 12,7°</td>
+                                </tr>
+                                <tr>
+                                    <td>Photobooth</td>
+                                    <td>(2 / 312) × 100% = 0,64%</td>
+                                    <td>(2 / 312) × 360° = 2,3°</td>
+                                </tr>
+                                <tr>
+                                    <td>Jamu</td>
+                                    <td>(38 / 312) × 100% = 12,18%</td>
+                                    <td>(38 / 312) × 360° = 43,8°</td>
+                                </tr>
+                            </table>
+                            <a href="#financials" class="chart-close">
+                                <i class="fas fa-times"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div id="table-3" class="chart-pop-up">
+                        <div class="chart-content">
+                            <h1>Offline Income Data Calculation Table</h1>
+                            <table>
+                                <tr>
+                                    <th>Item</th>
+                                    <th>Tally</th>
+                                    <th>Frequency</th>
+                                </tr>
+                                <tr>
+                                    <td>Oppie's Best Friend</td>
+                                    <td>卌 卌</td>
+                                    <td>10</td>
+                                </tr>
+                                <tr>
+                                    <td>Klepon (1 porsi)</td>
+                                    <td>||||</td>
+                                    <td>4</td>
+                                </tr>
+                                <tr>
+                                    <td>Klepon (2 porsi)</td>
+                                    <td>卌 卌 卌 |||</td>
+                                    <td>18</td>
+                                </tr>
+                                <tr>
+                                    <td>Jipang (original)</td>
+                                    <td>卌 卌 卌 |||</td>
+                                    <td>18</td>
+                                </tr>
+                                <tr>
+                                    <td>Jipang (with topping)</td>
+                                    <td>卌 ||</td>
+                                    <td>7</td>
+                                </tr>
+                                <tr>
+                                    <td>Monas Frozen</td>
+                                    <td>卌 卌 卌 卌 卌 卌 卌 卌 卌 卌 卌 卌 卌 卌 卌 卌 卌 卌 卌 卌 卌 卌 卌 |||</td>
+                                    <td>118</td>
+                                </tr>
+                                <tr>
+                                    <td>Es Cendol</td>
+                                    <td>卌 卌 卌 卌 卌 卌 卌</td>
+                                    <td>35</td>
+                                </tr>
+                                <tr>
+                                    <td>Kajineman</td>
+                                    <td>||||</td>
+                                    <td>4</td>
+                                </tr>
+                                <tr>
+                                    <td>Kantong Ajaib Oppie</td>
+                                    <td>||||</td>
+                                    <td>4</td>
+                                </tr>
+                                <tr>
+                                    <td>Paint-By-Number</td>
+                                    <td>|</td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <td>Photobooth</td>
+                                    <td>卌 卌 卌 卌 卌 |||</td>
+                                    <td>28</td>
+                                </tr>
+                                <tr>
+                                    <td>Jamu</td>
+                                    <td>卌 卌 卌 卌 卌 卌 卌 ||</td>
+                                    <td>37</td>
+                                </tr>
+                            </table>
+                            <p>
+                                Dari data yang ada, terlihat bahwa Monas Frozen adalah item yang paling sering dipilih
+                                dengan jumlah 118
+                                kali, diikuti oleh Jamu (37 kali) dan Es Cendol (35 kali). Sementara itu, item yang
+                                paling
+                                jarang
+                                dipilih adalah Paint-By-Number, hanya 1 kali. Artinya, minuman dingin seperti Monas
+                                Frozen
+                                dan Jamu
+                                cukup populer, sedangkan aktivitas seperti melukis kurang diminati.
+                            </p>
+                            <a href="#financials" class="chart-close">
+                                <i class="fas fa-times"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div id="line-pop-up-3" class="chart-pop-up">
+                        <div class="chart-content">
+                            <h1>Offline Income Line Chart</h1>
+                            <div class="chart-container"><canvas id="lineChart3"></canvas></div>
+                            <p>
+                                Diagram garis ini juga memperlihatkan jumlah barang yang terjual selama kegiatan bazar,
+                                tapi
+                                disajikan
+                                dalam bentuk garis yang naik turun. Dari grafik ini, kita bisa mengetahui produk apa
+                                yang
+                                paling laku
+                                dan mana yang kurang diminati. Monas Frozen tetap menjadi produk dengan penjualan
+                                tertinggi
+                                sebanyak 118
+                                unit, sedangkan Paint-By-Number hanya terjual 1 unit. Selisih jumlah penjualan ini bisa
+                                terjadi karena
+                                minat pembeli yang berbeda, dan kami juga sudah mempertimbangkan stok setiap produk agar
+                                sesuai dengan
+                                perkiraan penjualan, supaya tidak ada stok berlebih.
+                            </p>
+                            <a href="#financials" class="chart-close">
+                                <i class="fas fa-times"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div id="bar-pop-up-3" class="chart-pop-up">
+                        <div class="chart-content">
+                            <h1>Offline Income Bar Chart</h1>
+                            <div class="chart-container"><canvas id="barChart3"></canvas></div>
+                            <p>
+                                Diagram batang ini dibuat berdasarkan banyaknya jumlah barang yang terjual dari setiap
+                                produk selama
+                                bazar. Dari data yang terlihat, produk yang paling banyak terjual adalah Monas Frozen
+                                dengan
+                                jumlah
+                                penjualan sebanyak 118 unit. Sementara itu, produk yang paling sedikit terjual adalah
+                                Paint-By-Number,
+                                yaitu hanya 1 unit saja. Melalui grafik ini, kita bisa melihat dengan jelas perbedaan
+                                jumlah
+                                penjualan
+                                dari setiap produk, dari yang paling tinggi sampai yang paling rendah.
+                            </p>
+                            <a href="#financials" class="chart-close">
+                                <i class="fas fa-times"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div id="pie-pop-up-3" class="chart-pop-up">
+                        <div class="chart-content">
+                            <h1>Offline Income Pie Chart</h1>
+                            <div class="chart-container"><canvas id="pieChart3"></canvas></div>
+                            <p>
+                                Diagram lingkaran digunakan untuk memperlihatkan persentase penjualan dari setiap produk
+                                dibandingkan
+                                dengan total keseluruhan penjualan barang. Dari total semua barang yang terjual,
+                                masing-masing produk
+                                dihitung besar persentasenya dan kemudian diubah menjadi sudut lingkaran. Misalnya,
+                                Monas
+                                Frozen
+                                memiliki jumlah penjualan tertinggi, jadi bagian lingkarannya juga paling besar.
+                                Sementara
+                                Paint-By-Number hanya menyumbang sedikit, jadi bagian lingkarannya kecil. Dari sini,
+                                kita
+                                bisa langsung
+                                tahu produk mana yang banyak terjual dan mana yang hanya sedikit, cukup dengan melihat
+                                ukuran potongan
+                                pada lingkaran.
+                            </p>
+                            <h1>Perhitungan</h1>
+                            <table>
+                                <tr>
+                                    <th>Rumus Menghitung Persentase</th>
+                                    <td>Persentase = (Frekuensi / Total frekuensi) × 100%</td>
+                                </tr>
+                            </table>
+                            <table>
+                                <tr>
+                                    <th>Rumus Menghitung Besar Sudut</th>
+                                    <td>Sudut = (Frekuensi / Total frekuensi) × 360°</td>
+                                </tr>
+                            </table>
+                            <table>
+                                <tr>
+                                    <th>Item</th>
+                                    <th>Percentage</th>
+                                    <th>Angle Size</th>
+                                </tr>
+                                <tr>
+                                    <td>Oppie's Best Friend</td>
+                                    <td>(10 / 284) × 100% = 3,52%</td>
+                                    <td>(10 / 284) × 360° = 12,68°</td>
+                                </tr>
+                                <tr>
+                                    <td>Klepon (1 porsi)</td>
+                                    <td>(4 / 284) × 100% = 1,41%</td>
+                                    <td>(4 / 284) × 360° = 5,07°</td>
+                                </tr>
+                                <tr>
+                                    <td>Klepon (2 porsi)</td>
+                                    <td>(18 / 284) × 100% = 6,34%</td>
+                                    <td>(18 / 284) × 360° = 22,82°</td>
+                                </tr>
+                                <tr>
+                                    <td>Jipang (original)</td>
+                                    <td>(18 / 284) × 100% = 6,34%</td>
+                                    <td>(18 / 284) × 360° = 22,82°</td>
+                                </tr>
+                                <tr>
+                                    <td>Jipang (with topping)</td>
+                                    <td>(7 / 284) × 100% = 2,46%</td>
+                                    <td>(7 / 284) × 100% = 2,46%</td>
+                                </tr>
+                                <tr>
+                                    <td>Monas Frozen</td>
+                                    <td>(118 / 284) × 100% = 41,55%</td>
+                                    <td>(118 / 284) × 360° = 149,58°</td>
+                                </tr>
+                                <tr>
+                                    <td>Es Cendol</td>
+                                    <td>(35 / 284) × 100% = 12,32%</td>
+                                    <td>(35 / 284) × 360° = 44,37°</td>
+                                </tr>
+                                <tr>
+                                    <td>Kajineman</td>
+                                    <td>(4 / 284) × 100% = 1,41%</td>
+                                    <td>(4 / 284) × 360° = 5,07°</td>
+                                </tr>
+                                <tr>
+                                    <td>Kantong Ajaib Oppie</td>
+                                    <td>(4 / 284) × 100% = 1,41%</td>
+                                    <td>(4 / 284) × 360° = 5,07°</td>
+                                </tr>
+                                <tr>
+                                    <td>Paint-By-Number</td>
+                                    <td>(1 / 284) × 100% = 0,35%</td>
+                                    <td>(1 / 284) × 360° = 1,27°</td>
+                                </tr>
+                                <tr>
+                                    <td>Photobooth</td>
+                                    <td>(28 / 284) × 100% = 9,86%</td>
+                                    <td>(28 / 284) × 360° = 35,49°</td>
+                                </tr>
+                                <tr>
+                                    <td>Jamu</td>
+                                    <td>(37 / 284) × 100% = 13,03%</td>
+                                    <td>(37 / 284) × 360° = 46,90°</td>
+                                </tr>
+                            </table>
+                            <a href="#financials" class="chart-close">
+                                <i class="fas fa-times"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div id="table-5" class="chart-pop-up">
+                        <div class="chart-content">
+                            <h1>Salary Data Calculation Table</h1>
+                            <table>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Salary</th>
+                                </tr>
+                                <tr>
+                                    <td>Audrey</td>
+                                    <td>Rp154.905</td>
+                                </tr>
+                                <tr>
+                                    <td>Grace</td>
+                                    <td>Rp153.158</td>
+                                </tr>
+                                <tr>
+                                    <td>Joanna</td>
+                                    <td>Rp143.258</td>
+                                </tr>
+                                <tr>
+                                    <td>Tri</td>
+                                    <td>Rp158.399</td>
+                                </tr>
+                                <tr>
+                                    <td>Vallerie</td>
+                                    <td>Rp157.234</td>
+                                </tr>
+                                <tr>
+                                    <td>Ega</td>
+                                    <td>Rp158.399</td>
+                                </tr>
+                            </table>
+                            <p>
+                                Dari data yang ada, dapat kami simpulkan bahwa Audrey mendapat gaji sebesar Rp154.905,
+                                disusul oleh
+                                Grace yang menerima Rp153.158. Joanna memiliki gaji paling kecil yaitu Rp143.258.
+                                Sementara
+                                itu, Tri dan
+                                Ega sama-sama mendapat gaji tertinggi sebesar Rp158.399. Vallerie berada sedikit di
+                                bawah
+                                mereka dengan
+                                gaji Rp157.234.
+                            </p>
+                            <a href="#financials" class="chart-close">
+                                <i class="fas fa-times"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div id="line-pop-up-5" class="chart-pop-up">
+                        <div class="chart-content">
+                            <h1>Salary Line Chart</h1>
+                            <div class="chart-container"><canvas id="lineChart5"></canvas></div>
+                            <p>
+                                Diagram garis ini memperlihatkan besar gaji masing-masing orang. Lewat
+                                grafik ini, kita bisa melihat siapa yang mendapatkan gaji paling besar dan siapa yang
+                                mendapatkan paling
+                                kecil. Perbedaan jumlah gaji ini bisa disebabkan oleh pembagian tugas atau tanggung
+                                jawab
+                                yang
+                                berbeda-beda. Dengan melihat grafik ini, jadi lebih mudah untuk memahami urutan jumlah
+                                gaji
+                                yang
+                                diterima.
+                            </p>
+                            <a href="#financials" class="chart-close">
+                                <i class="fas fa-times"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div id="bar-pop-up-5" class="chart-pop-up">
+                        <div class="chart-content">
+                            <h1>Salary Bar Chart</h1>
+                            <div class="chart-container"><canvas id="barChart5"></canvas></div>
+                            <p>
+                                Diagram batang ini dibuat berdasarkan jumlah gaji yang diterima oleh setiap orang.
+                                Terlihat
+                                bahwa gaji
+                                yang paling besar diterima oleh Tri dan Ega, yaitu sebesar Rp158.399. Sementara itu,
+                                gaji
+                                yang paling
+                                kecil diterima oleh Joanna, yaitu Rp143.258. Dari grafik ini, kita bisa melihat
+                                perbandingan
+                                gaji dari
+                                yang tertinggi sampai yang terendah secara jelas.
+                            </p>
+                            <a href="#financials" class="chart-close">
+                                <i class="fas fa-times"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div id="pie-pop-up-5" class="chart-pop-up">
+                        <div class="chart-content">
+                            <h1>Salary Pie Chart</h1>
+                            <div class="chart-container"><canvas id="pieChart5"></canvas></div>
+                            <p>
+                                Diagram lingkaran ini berfungsi untuk menunjukkan perbandingan jumlah gaji dalam bentuk
+                                persentase dan
+                                besar sudut. Gaji masing-masing orang dibandingkan dengan total seluruh gaji yang
+                                diterima
+                                oleh semua
+                                nama dalam daftar. Dari situ, bisa dihitung persentase dan besar sudutnya. Lewat diagram
+                                ini, kita bisa
+                                tahu siapa yang menerima bagian paling besar dan siapa yang paling kecil, cukup dengan
+                                melihat seberapa
+                                besar potongan lingkarannya.
+                            </p>
+                            <h1>Perhitungan</h1>
+                            <table>
+                                <tr>
+                                    <th>Rumus Menghitung Persentase</th>
+                                    <td>Persentase = (Frekuensi / Total frekuensi) × 100%</td>
+                                </tr>
+                            </table>
+                            <table>
+                                <tr>
+                                    <th>Rumus Menghitung Besar Sudut</th>
+                                    <td>Sudut = (Frekuensi / Total frekuensi) × 360°</td>
+                                </tr>
+                            </table>
+                            <table>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Percentage</th>
+                                    <th>Angle Size</th>
+                                </tr>
+                                <tr>
+                                    <td>Audrey</td>
+                                    <td>(154.905 / 925.353) × 100% = 16,74%</td>
+                                    <td>(154.905 / 925.353) × 360° = 60,28°</td>
+                                </tr>
+                                <tr>
+                                    <td>Grace</td>
+                                    <td>(153.158 / 925.353) × 100% = 16,56%</td>
+                                    <td>(153.158 / 925.353) × 360° = 59,61°</td>
+                                </tr>
+                                <tr>
+                                    <td>Joanna</td>
+                                    <td>(143.258 / 925.353) × 100% = 15,48%</td>
+                                    <td>(143.258 / 925.353) × 360° = 55,74°</td>
+                                </tr>
+                                <tr>
+                                    <td>Tri</td>
+                                    <td>(158.399 / 925.353) × 100% = 17,13%</td>
+                                    <td>(158.399 / 925.353) × 360° = 61,68°</td>
+                                </tr>
+                                <tr>
+                                    <td>Vallerie</td>
+                                    <td>(157.234 / 925.353) × 100% = 17,00%</td>
+                                    <td>(157.234 / 925.353) × 360° = 61,17°</td>
+                                </tr>
+                                <tr>
+                                    <td>Ega</td>
+                                    <td>(158.399 / 925.353) × 100% = 17,13%</td>
+                                    <td>(158.399 / 925.353) × 360° = 61,68°</td>
+                                </tr>
+                            </table>
+                            <a href="#financials" class="chart-close">
+                                <i class="fas fa-times"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div id="table-6" class="chart-pop-up">
+                        <div class="chart-content">
+                            <h1>Profit Division Data Calculation Table</h1>
+                            <table>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Division</th>
+                                </tr>
+                                <tr>
+                                    <td>Audrey</td>
+                                    <td>Rp238.776</td>
+                                </tr>
+                                <tr>
+                                    <td>Grace</td>
+                                    <td>Rp42.729</td>
+                                </tr>
+                                <tr>
+                                    <td>Joanna</td>
+                                    <td>Rp125.418</td>
+                                </tr>
+                                <tr>
+                                    <td>Tri</td>
+                                    <td>Rp53.753</td>
+                                </tr>
+                                <tr>
+                                    <td>Vallerie</td>
+                                    <td>Rp76.857</td>
+                                </tr>
+                                <tr>
+                                    <td>Ega</td>
+                                    <td>Rp137.821</td>
+                                </tr>
+                            </table>
+                            <p>
+                                Dari data yang ada, terlihat bahwa Audrey mendapat pembagian keuntungan sebesar
+                                Rp238.776.
+                                Grace
+                                mendapat Rp42.729, dan Joanna menerima Rp125.418. Tri mendapatkan Rp53.753, sedangkan
+                                Vallerie
+                                memperoleh Rp76.857. Ega mendapat Rp137.821 dari pembagian keuntungan.
+                            </p>
+                            <a href="#financials" class="chart-close">
+                                <i class="fas fa-times"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div id="line-pop-up-6" class="chart-pop-up">
+                        <div class="chart-content">
+                            <h1>Profit Division Line Chart</h1>
+                            <div class="chart-container"><canvas id="lineChart6"></canvas></div>
+                            <p>
+                                Diagram garis ini juga menampilkan data pembagian keuntungan selama kegiatan
+                                berlangsung.
+                                Dengan grafik
+                                ini, kita bisa melihat siapa saja yang mendapat bagian paling banyak dan siapa yang
+                                paling
+                                sedikit.
+                                Perbedaan pembagian keuntungan ini bisa terjadi karena tanggung jawab atau kontribusi
+                                setiap
+                                orang yang
+                                berbeda. Lewat grafik garis, urutan dan perbedaan jumlah pembagian keuntungan jadi lebih
+                                mudah dilihat.
+                            </p>
+                            <a href="#financials" class="chart-close">
+                                <i class="fas fa-times"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div id="bar-pop-up-6" class="chart-pop-up">
+                        <div class="chart-content">
+                            <h1>Profit Division Bar Chart</h1>
+                            <div class="chart-container"><canvas id="barChart6"></canvas></div>
+                            <p>
+                                Diagram batang ini dibuat berdasarkan pembagian keuntungan yang diterima oleh setiap
+                                orang.
+                                Terlihat
+                                bahwa Audrey mendapat bagian paling besar, yaitu Rp238.776, sedangkan Grace mendapat
+                                bagian
+                                paling
+                                kecil, yaitu Rp42.729. Dari grafik ini, kita bisa melihat urutan pembagian keuntungan
+                                dari
+                                yang paling
+                                besar sampai yang paling kecil dengan jelas.
+                            </p>
+                            <a href="#financials" class="chart-close">
+                                <i class="fas fa-times"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div id="pie-pop-up-6" class="chart-pop-up">
+                        <div class="chart-content">
+                            <h1>Profit Division Pie Chart</h1>
+                            <div class="chart-container"><canvas id="pieChart6"></canvas></div>
+                            <p>
+                                Diagram lingkaran digunakan untuk memperlihatkan perbandingan pembagian keuntungan dalam
+                                bentuk
+                                persentase dan besar sudut. Setiap jumlah pembagian dibandingkan dengan total
+                                keseluruhan,
+                                lalu dihitung
+                                persentasenya dan besar sudutnya dalam lingkaran. Dengan melihat ukuran potongan
+                                lingkaran,
+                                kita bisa
+                                tahu siapa yang mendapat bagian terbesar dan terkecil dari keseluruhan pembagian
+                                keuntungan.
+                            </p>
+                            <h1>Perhitungan</h1>
+                            <table>
+                                <tr>
+                                    <th>Rumus Menghitung Persentase</th>
+                                    <td>Persentase = (Frekuensi / Total frekuensi) × 100%</td>
+                                </tr>
+                            </table>
+                            <table>
+                                <tr>
+                                    <th>Rumus Menghitung Besar Sudut</th>
+                                    <td>Sudut = (Frekuensi / Total frekuensi) × 360°</td>
+                                </tr>
+                            </table>
+                            <table>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Percentage</th>
+                                    <th>Angle Size</th>
+                                </tr>
+                                <tr>
+                                    <td>Audrey</td>
+                                    <td>(238.776 / 675.354) × 100% = 35,35%</td>
+                                    <td>(238.776 / 675.354) × 360° = 127,27°</td>
+                                </tr>
+                                <tr>
+                                    <td>Grace</td>
+                                    <td>(42.729 / 675.354) × 100% = 6,33%</td>
+                                    <td>(42.729 / 675.354) × 360° = 22,77°</td>
+                                </tr>
+                                <tr>
+                                    <td>Joanna</td>
+                                    <td>(125.418 / 675.354) × 100% = 18,57%</td>
+                                    <td>(125.418 / 675.354) × 360° = 66,84°</td>
+                                </tr>
+                                <tr>
+                                    <td>Tri</td>
+                                    <td>(53.753 / 675.354) × 100% = 7,96%</td>
+                                    <td>(53.753 / 675.354) × 360° = 28,66°</td>
+                                </tr>
+                                <tr>
+                                    <td>Vallerie</td>
+                                    <td>(76.857 / 675.354) × 100% = 11,39%</td>
+                                    <td>(76.857 / 675.354) × 360° = 41,00°</td>
+                                </tr>
+                                <tr>
+                                    <td>Ega</td>
+                                    <td>(137.821 / 675.354) × 100% = 20,40%</td>
+                                    <td>(137.821 / 675.354) × 360° = 73,46°</td>
+                                </tr>
+                            </table>
+                            <a href="#financials" class="chart-close">
+                                <i class="fas fa-times"></i>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+            </section>
+
+            <!--Hasil Kegiatan - Refleksi Kegiatan-->
+
+            <section id="refleksi-kegiatan">
+                <section class="donation">
+                    <div class="donation-img">
+                        <div class="donation-title">
+                            <p>R E F L E C T I O N</p>
+                        </div>
+                    </div>
+                    <div class="cita">
+                        <p class="cita">
+                            Based on KBBI (Indonesian Dictionary), aspiration means desires that are always in the mind
+                            or the final goal. This is usually related to future careers and long-term targets.
+                            Aspirations are important in providing direction and focus to a person's life, without
+                            aspirations a person may feel lost or live without direction. Through aspirations, we can
+                            build a spirit of life and become more positive because aspirations encourage us to
+                            understand ourselves more deeply and to know the final goal we want to achieve. Finally, as
+                            a motivation to achieve achievements and success in various areas of life.
+                        </p>
+                    </div>
+
+                    <p class="pengantar-donasi">
+                        Through the bazaar experience and group performances, we learned that achieving goals requires
+                        real effort and careful planning. Here are five concrete examples of what we have done:
+                    </p>
+
+                    <div class="konkret-background">
+                        <div class="konkret">
+                            <h1>Usaha Kami Menggapai Cita-Cita</h1>
+                            <div class="lembaran-slider-container" id="konkret">
+                                <div class="lembaran" data-index="0">
+                                    <div class="lembar">
+                                        <h3>Determining the Priority Scale</h3>
+                                        <p>
+                                            Determining the priority scale
+                                            is one of the important parts in the contents of a mature plan. It means
+                                            knowing which parts are more important and priority than others; this helps
+                                            manage time more effectively and easily.
+                                        </p>
+                                    </div>
+                                    <div class="lembar">
+                                        <h3>Cooperating and Collaborating</h3>
+                                        <p>
+                                            Through the process of facing the bazaar and group performances, we learned
+                                            that cooperation and collaboration between each other increases work
+                                            efficiency, creativity, productivity and uniqueness. All of these things can
+                                            accelerate the achievement of our aspirations. Finally, cooperation can ease
+                                            the process of achieving aspirations.
+                                        </p>
+                                    </div>
+                                    <div class="lembar">
+                                        <h3>Developing a Disciplined and Never-Give-Up Attitude Within Yourself</h3>
+                                        <p>
+                                            The existence of a disciplined attitude through our group work experience
+                                            teaches that responsibility and consistency can accelerate the achievement
+                                            of goals so it is very important to have in achieving our aspirations. Then,
+                                            a never-give-up attitude within yourself is very important in facing
+                                            challenges before achieving success. As during the process in IL, of course,
+                                            you will go through several failures and problems. However, this does not
+                                            stop the achievement of IL's final goal, which is a smooth bazaar and
+                                            collaboration of performances.
+                                        </p>
+                                    </div>
+                                    <div class="lembar">
+                                        <h3>Regularly Praying Throughout the Process</h3>
+                                        <p>
+                                            Through prayer, you can gain peace and confidence in future results, thereby
+                                            fostering enthusiasm in facing challenges.
+                                        </p>
+                                    </div>
+                                    <div class="lembar">
+                                        <h3>Building Self-Confidence</h3>
+                                        <p>
+                                            Building and increasing self-confidence is very important because it can
+                                            make us more confident and focused in making decisions and have clear and
+                                            positive thoughts. Through the process of facing the bazaar and group
+                                            performances, we learned that self-confidence can allow us to express
+                                            ourselves more fluently (such as in giving ideas, implementing, planning,
+                                            etc.) which can facilitate communication and appear more optimally in the
+                                            future.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <button class="prev" onclick="moveReflectionSlide(-1, 'konkret')" id="prevBtn1">
+                                    <i class="fa-solid fa-caret-left"></i>
+                                </button>
+                                <button class="next" onclick="moveReflectionSlide(1, 'konkret')" id="nextBtn1">
+                                    <i class="fa-solid fa-caret-right"></i>
+                                </button>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <p class="pengantar-donasi">
+                        Aspirations are a direction for steps, a guiding star in the darkness of life's journey. It is
+                        not just a dream, but a goal that gives meaning to every effort, every sweat, and every prayer
+                        that is said. In planning the future, humans do not walk alone. God also proclaims how important
+                        it is to plan life wisely. In the Holy Bible, there is much advice that emphasizes the
+                        importance of vision, goals, and long-term planning. Here are three quotes from the Holy Bible
+                        that emphasize the importance of planning for the future:
+                    </p>
+
+                    <div class="kitab-background">
+                        <div class="kitab">
+                            <div class="lembaran-slider-container" id="kitab">
+                                <div class="lembaran" data-index="0">
+                                    <div class="lembar">
+                                        <h3>Proverbs 16:3</h3>
+                                        <p>
+                                            <em>“Commit your works to the LORD, and your plans will be
+                                                established.”</em><br>
+                                            <br>
+                                            This verse shows that planning is an important part of life, but it must be
+                                            accompanied by surrender to God's will. When aspirations and efforts are
+                                            combined with faith, the results will be blessed.
+                                        </p>
+                                    </div>
+                                    <div class="lembar">
+                                        <h3>Jeremiah 29:11</h3>
+                                        <p>
+                                            <em>“For I know the plans I have for you,' declares the Lord, 'plans to
+                                                prosper you and not to harm you, plans to give you hope and a
+                                                future.'”</em><br>
+                                            <br>
+                                            This verse confirms that God himself has a beautiful plan for every human
+                                            being. So, we are asked to make plans that are in line with the values ​​of
+                                            hope and peace.
+                                        </p>
+                                    </div>
+                                    <div class="lembar">
+                                        <h3>Luke 14:28</h3>
+                                        <p>
+                                            <em>“Suppose one of you wants to build a tower. Won't you first sit down and
+                                                estimate the cost to see if you have enough money to complete
+                                                it?”</em><br>
+                                            <br>
+                                            Here, Jesus emphasizes the importance of careful planning before starting
+                                            something. This teaches that big goals require calculation, perseverance,
+                                            and serious preparation.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <button class="prev" onclick="moveReflectionSlide(-1, 'kitab')" id="prevBtn2">
+                                    <i class="fa-solid fa-caret-left"></i>
+                                </button>
+                                <button class="next" onclick="moveReflectionSlide(1, 'kitab')" id="nextBtn2">
+                                    <i class="fa-solid fa-caret-right"></i>
+                                </button>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="donasi">
+                        <p class="donasi">
+                            The bazaar we held gave us a lot of benefits, and one of the biggest ones was financial. But
+                            more than that, it gave us the chance to share our blessings with others, especially those
+                            who are small, weak, poor, marginalized, and disabled. As a class, we agreed to donate part
+                            of our profit to an orphanage. In total, Class 93 donated Rp 1.500.000,00, which was split
+                            evenly between all groups. That means each group donated Rp 250.000,00. On February 21,
+                            2025, some of us went to visit Rumah Hati Suci Orphanage. We met the kids there and were
+                            taken on a tour around the place. They told us about how the orphanage started, who lives
+                            there, and what the kids daily lives are like. We were amazed by how well the place is run
+                            and how much love and care is given to every child there. Hearing the stories of why some of
+                            them ended up there was really touching. It opened our eyes and made us realize how lucky
+                            and blessed we are. We also got to visit Hati Suci School, which is right next to the
+                            orphanage. The school has everything from kindergarten to high school. Some of the students
+                            live in the orphanage, and some are from outside because the school is open to the public.
+                            This whole experience meant a lot to us. It was not just about giving money, it made us
+                            reflect and be more thankful for what we have. We also realized that caring for others is
+                            not just something you talk about in class, but it is something you really have to do.<br>
+                            <br>
+                            Besides the group donation, each of us tried to give back in our own way too. Audrey bought
+                            toys with her profits and donated them to a Sunday school for kids with disabilities.
+                            Vallerie used her share to buy food and gave it to a deaf scavenger near her house. Tri
+                            supported local small businesses by buying traditional cookies from UMKM sellers, helping
+                            them earn more in the middle of their struggles with competition, lack of funding, and
+                            limited tech access. Grace gave her profits to a homeless man with a physical disability.
+                            Joanna bought clothes and donated them to a nursing home. And Ega set aside part of his
+                            profits for the APP (Aksi Puasa Pembangunan) box. The donations that have been collected in
+                            those little boxes are handed over to the church at the end of the lent to be distributed to
+                            those in need.
+                        </p>
+                    </div>
+                </section>
+            </section>
+
+            <!--Hasil Kegiatan - Pembuatan Produk Bioteknologi-->
+
+            <section id="biotech">
+                <div class="biotech">
+                    <h3>Biotechnology Product Production Video</h3>
+                    <iframe src="https://www.youtube.com/embed/GQhz11B8oVU?si=oW0Z8OackxnretzV"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                    </iframe>
+                </div>
+            </section>
+
+        </section>
+
+    </section>
+
+    <!--Penutupan-->
+
+    <section class="penutupan">
+        <h1 class="penutupan-title">CLOSING</h1>
+        <div class="penutupan-title-underline"></div>
+
+        <section id="kesimpulan-saran">
+
+            <!--Kesimpulan-->
+
+            <section id="kesimpulan">
+                <section class="kesimpulan">
+                    <h1>Conclusion</h1>
+                    <p>
+                        Based on the report that we have made, it can be concluded that this activity is very useful
+                        for
+                        us. This activity can improve the skills of students in communication, problem solving, time
+                        management, critical thinking, creativity and cooperation. Through this IL project, students
+                        can
+                        also learn about production planning, promotion, decorating, and booth management
+                        effectively.<br>
+                        <br>
+                        This Bazaar project not only has a positive impact on us. 9th grade students get direct
+                        experience in managing a business, while 8th and 7th grade students can be inspired to get
+                        to
+                        know Nusantara culture more deeply. The school also benefits by seeing more real learning
+                        outcomes and increasing awareness of the importance of preserving culture in the school
+                        environment.<br>
+                        <br>
+                        Although there were several challenges during the implementation of the bazaar, all of that
+                        could be overcome with good teamwork. It is proven by the many products that ran out
+                        quickly.
+                        Thus, this bazaar was a success. This activity can not only help in lessons but also in the
+                        character of students.
+                    </p>
+                </section>
+            </section>
+
+            <!--Saran-->
+
+            <section id="saran">
+                <section class="saran">
+                    <h1>Suggestions</h1>
+                    <p>
+                        Based on the bazaar that we have done, there are things that we want to improve for the
+                        future.
+                        One of them is communication between group members, so that coordination in preparation and
+                        implementation can run more smoothly. In this bazaar there was miscommunication between
+                        members
+                        so many problems started to appear. With good communication, the division of tasks will be
+                        clearer and there will be less miscommunication. Not only communication, we also need to
+                        improve
+                        time management, both in the planning process, booth decoration and during the
+                        implementation of
+                        the bazaar. Good time management will ensure that all tasks can be completed properly and
+                        efficiently and reduce delays. By improving communication and time management, the bazaar
+                        can
+                        run better.
+                    </p>
+                </section>
+            </section>
+        </section>
+    </section>
+
+    <!--Daftar Pustaka-->
+
+    <section id="dafpus">
+        <section class="daftar-pustaka">
+            <h1>References</h1>
+            <ul>
+                <li>
+                    <em>Telkomsel</em>. 2024. “Apa itu Globalisasi? Yuk Kenalan dan Cari Tau Pengaruhnya!”.
+                    https://www.telkomsel.com/jelajah/jelajah-lifestyle/apa-itu-globalisasi-yuk-kenalan-dan-cari-tahu-pengaruhnya#:~:text=Apa%20yang%20Itu%20Globalisasi?,Kenapa%20bisa%20transparan
+                    (diakses pada tanggal 22 Februari pukul 12.05).
+                </li>
+                <li>
+                    <em>Kumparan.com</em> . (2022, 23 Desember). “ Definisi dan Landasan Pembelajaran Terpadu di
+                    Dunia
+                    Pendidikan” .
+                    https://kumparan.com/berita-terkini/definisi-dan-landasan-pembelajaran-terpadu-di-dunia-pendidikan-1zUmIIcBHQF/2
+                    (diakses pada tanggal 22 Februari 12.30).
+                </li>
+                <li>
+                    Alimantul, Sadiyah dan A Wathon. 2022. “Manfaat Pembelajaran Terpadu Terhadap Motivasi Belajar
+                    Siswa”. Vol. 5 No. 2. https://oj.lapamu.com/index.php/sim/article/view/145 (diakses pada tanggal
+                    23
+                    Februari 12.15).
+                </li>
+                <li>
+                    Rohmadi, Slamet. 2023. “Pemanfaatan Model Pembelajaran Integratif Untuk Pengembangan Kurikulum
+                    Merdeka”.
+                    https://www.beritamagelang.id/kolom/pemanfaatan-model-pembelajaran-integratif-untuk-pengembangan-kurikulum-merdeka
+                    (diakses pada tanggal 23 Februari 12.20).
+                </li>
+                <li>
+                    Verianty, Woro Anjar. 2023. “Apa Arti Cita-Cita Menurut Kamus Besar Bahasa Indonesia? Ini
+                    Jawabannya”.
+                    https://www.liputan6.com/hot/read/5286907/apa-arti-cita-cita-menurut-kamus-besar-bahasa-indonesia-ini-jawabannya
+                    (diakses pada tanggal 7 April 2025 pukul 21.53).
+                    (diakses pada tanggal 22 Februari 12.30).
+                </li>
+                <li>
+                    <em>PurnaWarta</em>. 2024. “Pentingnya Memiliki Cita-Cita dalam Hidup”.
+                    https://purnawarta.com/lainnya/opinicerita/pentingnya-memiliki-cita-cita-dalam-hidup/ (diakses
+                    pada
+                    tanggal 7 April 2025 pukul 22.00).
+                </li>
+                <li>
+                    Yuniarti, Adelbertha Eva. 2022. “Tindakan yang Mendorong Terwujudnya Cita-cita Masa Depan”.
+                    https://www.idntimes.com/life/inspiration/eva-yuniarti/tindakan-yang-mendorong-terwujudnya-cita-cita-masa-depan-c1c2?page=all
+                    (diakses pada tanggal 7 April 2025 pukul 22:05).
+                </li>
+            </ul>
+        </section>
+    </section>
+
+    <!--Lampiran-->
+
+    <section id="lampiran">
+        <section class="lampiran">
+            <h1>Attachments</h1>
+            <div class="attachments">
+                <button class="scroll-button attachmentPrev" onclick="scrollImage(-1)">&#10094;</button>
+                <div class="image-container" id="imageContainer">
+                    <img src="bukti1.jpg">
+                    <img src="bukti2.jpg">
+                    <img src="bukti3.jpg">
+                    <img src="bukti4.jpg">
+                    <img src="bukti5.jpg">
+                    <img src="bukti6.jpg">
+                    <img src="bukti7.jpg">
+                    <img src="bukti8.jpg">
+                    <img src="bukti9.jpg">
+                    <img src="bukti10.jpg">
+                    <img src="bukti11.jpg">
+                    <img src="bukti12.jpg">
+                    <img src="bukti13.jpg">
+                    <img src="bukti14.jpg">
+                </div>
+                <button class="scroll-button attachmentNext" onclick="scrollImage(1)">&#10095;</button>
+            </div>
+        </section>
+    </section>
+
+    <!--Presentation-->
+
+    <section id="ppt">
+        <section class="presentation">
+            <div class="presentation-wrapper">
+                <div class="presentation-item item1">
+                    <h1>WE'RE PRESENTING</h1>
+                </div>
+                <div class="presentation-item item2">
+                    <h1>WE'RE PRESENTING</h1>
+                </div>
+                <div class="presentation-item item3">
+                    <h1>WE'RE PRESENTING</h1>
+                </div>
+                <div class="presentation-item item4">
+                    <h1>WE'RE PRESENTING</h1>
+                </div>
+            </div>
+            <div class="presentation-content">
+                <iframe src="https://www.canva.com/design/DAGi5_3BCeY/ySWlL8HKWxzOo4lbQRwhsQ/view?embed"
+                    allowfullscreen="allowfullscreen"></iframe>
+                <p>Check it out!</p>
+            </div>
+            <div class="presentation-wrapper">
+                <div class="presentation-item item1">
+                    <h1>WE'RE PRESENTING</h1>
+                </div>
+                <div class="presentation-item item2">
+                    <h1>WE'RE PRESENTING</h1>
+                </div>
+                <div class="presentation-item item3">
+                    <h1>WE'RE PRESENTING</h1>
+                </div>
+                <div class="presentation-item item4">
+                    <h1>WE'RE PRESENTING</h1>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <!--Footer-->
+
+    <footer>
+        <p class="footer">
+            © Copyright 2025 | All Rights Reserved<br>
+            Waroeng Si Oppie
+        </p>
+        <div class="socials">
+            <div class="social-text">Find Us!</div>
+            <div class="social-portal">
+                <a href="https://api.whatsapp.com/send?phone=628118252122&fbclid=PAZXh0bgNhZW0CMTEAAaZ3beqNGBUPGQdfpkalFM6rkV14rVAAn_t9Fe8UKexjo24g8UDomT9WG64_aem_CD-j-ixIeyFO7ebqLgx3Xw"
+                    target="_blank">
+                    <i class="fa-solid fa-phone"></i>
+                </a>
+                <a href="https://www.instagram.com/waroengsioppie/" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://www.youtube.com/@waroengsioppie" target="_blank">
+                    <i class="fa-brands fa-youtube" id="youtube"></i>
+                </a>
+                <a href="https://www.tiktok.com/@waroengoppie" target="_blank">
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // === Sidebar Open/Close Functionality ===
+        document.getElementById('open').addEventListener('click', function (event) {
+            event.preventDefault();
+            const aside = document.getElementById('aside');
+            aside.style.right = -0.5 + 'px';
+        });
+
+        document.getElementById('close').addEventListener('click', function (event) {
+            event.preventDefault();
+            const aside = document.getElementById('aside');
+            aside.style.right = -250 + 'px';
+        });
+
+        // === Global Slide Index Trackers ===
+        let index = 0;
+        let rencanaIndex = 0;
+
+        // === DOMContentLoaded Event ===
+        document.addEventListener("DOMContentLoaded", () => {
+            document.querySelector('.rencana-contents').style.transform = 'translateX(0)';
+            updateButtons();
+            updateIndicators();
+
+            showProductByIndex(0);
+
+            const firstButton = document.querySelector('.produksi-aside button');
+            if (firstButton) firstButton.click();
+
+            const indicators = document.querySelectorAll('.indicator');
+            indicators.forEach((indicator, i) => {
+                indicator.addEventListener('click', () => {
+                    index = i;
+                    document.querySelector('.rencana-contents').style.transform = `translateX(-${index * 100}%)`;
+                    updateButtons();
+                    updateIndicators();
+                });
+            });
+        });
+
+        // === Slide Movement Functions ===
+        function goToRencanaSlide(targetIndex) {
+            const slides = document.querySelectorAll('.rencana-slide');
+            rencanaIndex = Math.max(0, Math.min(targetIndex, slides.length - 1));
+            index = rencanaIndex;
+            document.querySelector('.rencana-contents').style.transform = `translateX(-${rencanaIndex * 100}%)`;
+            updateButtons();
+            updateIndicators();
+        }
+
+        function moveSlide(step) {
+            const slides = document.querySelectorAll('.rencana-slide');
+            index = Math.max(0, Math.min(index + step, slides.length - 1));
+            document.querySelector('.rencana-contents').style.transform = `translateX(-${index * 100}%)`;
+            updateButtons();
+            updateIndicators();
+        }
+
+        function moveRencanaSlide(step) {
+            const slides = document.querySelectorAll('.rencana-slide');
+            rencanaIndex = Math.max(0, Math.min(rencanaIndex + step, slides.length - 1));
+            document.querySelector('.rencana-contents').style.transform = `translateX(-${rencanaIndex * 100}%)`;
+            updateButtons();
+            updateIndicators();
+        }
+
+        // === Indicator and Button State Management ===
+        function updateButtons() {
+            document.getElementById('prevBtn').classList.toggle('hidden', index === 0);
+            document.getElementById('nextBtn').classList.toggle('hidden', index === document.querySelectorAll('.rencana-slide').length - 1);
+        }
+
+        function updateIndicators() {
+            const indicators = document.querySelectorAll('.indicator');
+            indicators.forEach((indicator, i) => {
+                indicator.classList.toggle('active', i === index);
+            });
+        }
+
+        // === Panel Content Updates ===
+        function updatePanel(button) {
+            const text = button.getAttribute('data-text');
+            const imageUrl = button.getAttribute('data-image');
+            const panel = document.getElementById('panel');
+
+            clearButtonHighlights();
+            button.style.backgroundColor = "var(--darkergreen)";
+
+            panel.innerHTML = `
+                    <div class="image-background">
+                    <img src="${imageUrl}" alt="Panel Image">
+                    </div>
+                    <div>${text}</div>
+                `;
+        }
+
+        function updateMultiplePanels(button) {
+            const products = JSON.parse(button.getAttribute('data-products'));
+            const panel = document.getElementById('panel');
+
+            clearButtonHighlights();
+            button.style.backgroundColor = "var(--darkergreen)";
+
+            panel.innerHTML = products.map(product => `
+                    <div class="image-background">
+                    <img src="${product.image}" alt="Panel Image">
+                    </div>
+                    <div class="panel-text">${product.text}</div>
+                `).join('');
+        }
+
+        function clearButtonHighlights() {
+            const buttons = document.querySelectorAll('.produksi-aside button');
+            buttons.forEach(btn => {
+                btn.style.backgroundColor = "var(--darkblue)";
+            });
+        }
+
+        // === Product Display Helpers ===
+        function showProductByIndex(i) {
+            const buttons = document.querySelectorAll('.produksi-aside button');
+            if (buttons[i]) {
+                buttons[i].click();
+            }
+        }
+
+        function showOthers() {
+            const buttons = document.querySelectorAll('.produksi-aside button');
+            const lastButton = buttons[buttons.length - 1];
+            if (lastButton) {
+                lastButton.click();
+            }
+        }
+
+        let financialIndex = 0;
+
+        function updateFinancialButtons() {
+            document.getElementById('financialPrevBtn').classList.toggle('hidden', financialIndex === 0);
+            document.getElementById('financialNextBtn').classList.toggle('hidden', financialIndex === document.querySelectorAll('.financial').length - 1);
+        }
+
+        function moveFinancialSlide(step) {
+            const slides = document.querySelectorAll('.financial');
+            financialIndex = Math.max(0, Math.min(financialIndex + step, slides.length - 1));
+            document.querySelector('.financial-contents').style.transform = `translateX(-${financialIndex * 100}vw)`;
+            updateFinancialButtons();
+        }
+
+        updateFinancialButtons();
+
+        function createCharts(chartId, type, labels, data, colors) {
+            new Chart(document.getElementById(chartId), {
+                type: type,
+                data: {
+                    labels: labels,
+                    datasets: [{
+                        label: 'Value',
+                        data: data,
+                        backgroundColor: colors,
+                        borderColor: colors,
+                        borderWidth: 1
+                    }]
+                }
+            });
+        }
+
+        function createCharts(chartId, type, labels, data, colors) {
+            const total = data.reduce((sum, value) => sum + value, 0);
+
+            const pieLabels = labels.map((label, index) => {
+                const percentage = (data[index] / total) * 100;
+                const angle = (percentage / 100) * 360;
+                return `${label} (${percentage.toFixed(1)}%, ${angle.toFixed(1)}°)`;
+            });
+
+            new Chart(document.getElementById(chartId), {
+                type: type,
+                data: {
+                    labels: type === 'pie' ? pieLabels : labels,
+                    datasets: [{
+                        label: 'Value',
+                        data: data,
+                        backgroundColor: colors,
+                        borderColor: colors,
+                        borderWidth: 1
+                    }]
+                },
+
+                options: {
+                    plugins: {
+                        tooltip: {
+                            callbacks: {
+                                label: function (tooltipItem) {
+                                    const dataset = tooltipItem.dataset.data;
+                                    const value = dataset[tooltipItem.dataIndex];
+                                    const percentage = (value / total) * 100;
+                                    const angle = (percentage / 100) * 360;
+                                    return `${tooltipItem.label}: ${value} (${percentage.toFixed(1)}%, ${angle.toFixed(1)}°)`;
+                                }
+                            }
+                        }
+                    }
+                }
+            });
+        }
+
+        const colors = [
+            'rgb(181, 74, 187)', 'rgb(92, 148, 204)', 'rgb(72, 97, 175)',
+            'rgb(80, 148, 67)', 'rgb(223, 131, 52)', 'rgb(209, 79, 55)',
+            'rgb(88, 36, 91)', 'rgb(68, 111, 179)', 'rgb(47, 63, 114)',
+            'rgb(45, 84, 38)', 'rgb(202, 101, 40)', 'rgb(183, 50, 20)'
+        ];
+
+        // Online Income
+        const labels2 = ['Oppie\'s Best Friend', 'Klepon (1 porsi)', 'Klepon (2 porsi)', 'Jipang (original)', 'Jipang (with topping)', 'Monas Frozen', 'Es Cendol', 'Kajineman', 'Kantong Ajaib Oppie', 'Paint-By-Number', 'Photobooth', 'Jamu'];
+        const data2 = [23, 4, 28, 45, 6, 85, 39, 12, 19, 11, 2, 38];
+
+        // Offline Income
+        const data3 = [10, 4, 18, 18, 7, 118, 35, 4, 4, 1, 28, 37];
+
+        // Salary
+        const labels5 = ['Audrey', 'Grace', 'Joanna', 'Tri', 'Vallerie', 'Ega'];
+        const data5 = [154905, 153158, 143258, 158399, 157234, 158399];
+
+        // Profit Division
+        const data6 = [238776, 42729, 125418, 53753, 76857, 137821];
+
+        // Create Charts
+        createCharts('lineChart2', 'line', labels2, data2, colors);
+        createCharts('barChart2', 'bar', labels2, data2, colors);
+        createCharts('pieChart2', 'pie', labels2, data2, colors);
+
+        createCharts('lineChart3', 'line', labels2, data3, colors);
+        createCharts('barChart3', 'bar', labels2, data3, colors);
+        createCharts('pieChart3', 'pie', labels2, data3, colors);
+
+        createCharts('lineChart5', 'line', labels5, data5, colors);
+        createCharts('barChart5', 'bar', labels5, data5, colors);
+        createCharts('pieChart5', 'pie', labels5, data5, colors);
+
+        createCharts('lineChart6', 'line', labels5, data6, colors);
+        createCharts('barChart6', 'bar', labels5, data6, colors);
+        createCharts('pieChart6', 'pie', labels5, data6, colors);
+
+        function updateReflectionButtons(sliderId) {
+            const slides = document.querySelectorAll(`#${sliderId} .lembar`);
+            const slider = document.querySelector(`#${sliderId} .lembaran`);
+            const index = parseInt(slider.getAttribute('data-index')) || 0;
+            document.getElementById(`prevBtn${sliderId === 'konkret' ? '1' : '2'}`).classList.toggle('hidden', index === 0);
+            document.getElementById(`nextBtn${sliderId === 'konkret' ? '1' : '2'}`).classList.toggle('hidden', index === slides.length - 1);
+        }
+
+        function moveReflectionSlide(step, sliderId) {
+            const slider = document.querySelector(`#${sliderId} .lembaran`);
+            const slides = document.querySelectorAll(`#${sliderId} .lembar`);
+            let index = parseInt(slider.getAttribute('data-index')) || 0;
+            index = Math.max(0, Math.min(index + step, slides.length - 1));
+            slider.style.transform = `translateX(-${index * 60}vw)`;
+            slider.setAttribute('data-index', index);
+            updateReflectionButtons(sliderId);
+        }
+
+        document.addEventListener("DOMContentLoaded", () => {
+            updateReflectionButtons('konkret');
+            updateReflectionButtons('kitab');
+        });
+
+        function scrollImage(direction) {
+            const container = document.getElementById('imageContainer');
+            const imageWidth = container.querySelector('img').offsetWidth + 20;
+            container.scrollBy({
+                left: direction * imageWidth,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+</body>
+
+</html>
